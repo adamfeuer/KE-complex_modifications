@@ -1,0 +1,34 @@
+{
+  "title": "KiCAD only - left alt sends button3 (Eagle CAD movement emulation)",
+  "rules": [
+    {
+      "description": "KiCAD only - left alt sends button3 (Eagle CAD movement emulation)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_gui"
+          },
+          "to": [
+            {
+              "key_code": "left_gui"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "pointing_button": "button3"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "org.kicad-pcb.kicad"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

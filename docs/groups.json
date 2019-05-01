@@ -189,6 +189,9 @@
         },
         {
           "path": "json/finder.json"
+        },
+        {
+          "path": "json/kicad_left_alt_sends_button3.json"
         }
       ]
     },
